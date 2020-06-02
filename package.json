@@ -1,0 +1,28 @@
+{
+  "name": "firebase-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@google-cloud/logging": "^7.3.0",
+    "cors": "^2.8.5",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "express": "^4.17.1",
+    "firebase-admin": "^8.10.0",
+    "firestore-export-import": "^0.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "nodemon": "^2.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec firebase serve --only functions,hosting",
+    "deploy": "firebase deploy --only functions,hosting"
+  },
+  "author": "",
+  "license": "ISC"
+}
